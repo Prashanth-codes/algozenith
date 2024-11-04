@@ -1,0 +1,167 @@
+/* Update.css */
+
+.update-container {
+  width: 800px;
+  padding: 20px;
+  border: 2px solid rgb(220, 214, 225);
+  border-radius: 8px; /* Rounded corners for the container */
+}
+
+.learning-material {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.chapter-content {
+  margin-left: 10px;
+  display: grid;
+  flex-direction: row; /* Ensure single-column layout */
+  gap: 15px;
+  flex: 1; /* Allow content to take available space */
+}
+
+.part {
+  display: grid;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.part:hover {
+  background-color: #f9f9f9;
+}
+
+.part-header {
+  display: grid;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes h3 to the left and button to the right */
+  align-items: center; /* Vertically centers h3 and button */
+  padding: 8px 12px;
+  margin-top: -30px;
+  margin-bottom: -40px;
+}
+
+.heading h3 {
+ margin-left: -2px;
+}
+.arrow{
+  padding: 1px;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.video{
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.icon{
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.heading .btn {
+  width: 50px;
+  margin-top: -10px;
+  margin-left: 500px;
+  background-color: white; /* Customize button color */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.heading .btn:hover {
+  background-color: #c7d2fe; /* Darken on hover */
+}
+
+.part-info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.part-info p{
+  margin: 0;
+  margin-left: -52px;
+}
+/* 
+.btn {
+  margin-left: 100px;
+  align-items: end;
+  justify-content: space-around;
+} */
+
+.btn:hover {
+  background-color: #4e78a2; /* Darken on hover */
+}
+.progress-bar {
+  background-color: #f0f0f0;
+  height: 8px;
+  border-radius: 4px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.progress-bar-fill {
+  background-color: #007bff;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.completion-status {
+  margin-left: 500px;
+  font-size: 12px;
+  color: #555;
+}
+
+.resource-item {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.resource-item:last-child {
+  border-bottom: none;
+}
+
+.resource-type {
+  font-weight: bold;
+}
+
+.resource-status.completed {
+  color: green;
+}
+
+.resource-status.not-completed {
+  color: red;
+}
+
+.part.expanded {
+  background-color: #e6f7ff; /* Highlight background for expanded parts */
+  border: 1px solid #00aaff; /* Change border color for clarity */
+}
+
+/* Optional: Add responsive styles */
+@media (max-width: 768px) {
+  .learning-material {
+    flex-direction: column; /* Stack elements on smaller screens */
+  }
+
+  .chapter-content {
+    margin-left: 0; /* Remove left margin on small screens */
+  }
+}

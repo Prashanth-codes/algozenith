@@ -1,0 +1,38 @@
+
+.tab-switcher{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+}
+
+.tabs-container{
+  border: none;
+  display: flex;
+  gap: 10px; /* Adds space between each tab */
+}
+.tabs-container button{
+  border: none;
+}
+
+.mentor{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.how-it-works-button {
+  margin-left: auto; /* Aligns the button to the far right */
+  padding: 6px 12px;
+  background-color: none;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+
+.active-tab {
+  font-weight: bold;
+  /* Additional styling for active tab */
+}

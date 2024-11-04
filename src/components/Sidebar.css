@@ -1,0 +1,88 @@
+.sidebar {
+    margin-left: 5px;
+    width: 200px;
+    background-color: #f5f7fa;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    display: flex;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-icon{
+    width: 35px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button-container button {
+    padding: 8px;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+
+.dashboard{
+    height: 20px;
+    width: 30px;
+    margin-right: 6px;
+}
+
+.learn{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.forum{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.upskill{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.contest{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.leader{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+/* Active state for clicked buttons */
+.button-container .active.clicked {
+    background-color: #c7d2fe;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inactive state for buttons */
+.button-container .inactive {
+    background-color: white;
+}
+
+.button-container button a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}

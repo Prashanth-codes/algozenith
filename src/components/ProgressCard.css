@@ -1,0 +1,21 @@
+.progress-card {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .progress-bar {
+    background: #e0e0e0;
+    height: 8px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+  .progress-complete {
+    background: #4caf50;
+    width: 50%; /* Example width, change as needed */
+    height: 100%;
+    display: block;
+    border-radius: 4px;
+  }
+  

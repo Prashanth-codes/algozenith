@@ -1,0 +1,17 @@
+.app-container {
+    display: flex;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: calc(100vh - 60px); /* Adjust height to fill below the navbar */
+    overflow-y: auto;
+  }
+  
